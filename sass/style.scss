@@ -1,1 +1,153 @@
+/* VARIABLES */
 
+$font-logo: 'Dancing Script', cursive;
+$font-subtitle: 'Playfair Display', serif;
+$font-modern: 'Roboto', sans-serif;
+
+$color-main: #424242;
+$color-cta: #ffce30;
+$color-light: #fafafa;
+
+$font-size__title: 60px;
+$font-size__subtitle: 32px;
+$font-size__description: 12px;
+
+/* GLOBAL */
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	max-width: 1440px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 80%;
+}
+
+/* HEADER */
+header {
+	height: 60vh;
+	width: 100vw;
+	background-image: url(https://cdn.shopify.com/s/files/1/0020/4547/6915/files/vapium-lite-landing-page-1427x803_2048x.jpg?v=1538762971);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+/* NAV */
+
+.navigation {
+	color: $color-light;
+	font-size: $font-size__description;
+
+	.nav-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		height: 10vh;
+
+		.nav-left {
+			padding: 30px 0 20px 200px;
+			font-family: $font-logo;
+			font-size: 20px;
+			color: $color-cta;
+		}
+
+		.nav-right {
+			padding: 30px 140px 20px 0;
+
+			.nav-list {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+
+				.nav-list__link {
+					margin-right: 20px;
+					list-style: none;
+
+					a {
+						text-decoration: none;
+						color: $color-light;
+						-webkit-transition: 0.3s all;
+						transition: 0.3s all;
+
+						&:hover {
+							color: $color-cta;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* HERO */
+.hero {
+	height: 60vh;
+	width: 100vw;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align: center;
+	margin-top: -10vh;
+	color: $color-light;
+	padding-top: 60px;
+
+	.hero-subtitle {
+		font-weight: 300;
+		font-size: $font-size__subtitle;
+		font-family: $font-subtitle;
+		font-style: italic;
+		margin-bottom: 15px;
+	}
+
+	.hero-title {
+		font-size: $font-size__title;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+	.hero-btn {
+		display: inline-block;
+		padding: 7px 24px;
+		background: $color-cta;
+		color: #fff;
+		border-radius: 3px;
+		text-decoration: none;
+		font-weight: 500;
+		border: none;
+		-webkit-transition: 0.5s all;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+/*# sourceMappingURL=style.css.map */

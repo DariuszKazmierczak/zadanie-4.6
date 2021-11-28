@@ -1,2 +1,123 @@
+/* VARIABLES */
+/* GLOBAL */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 80%;
+}
+
+/* HEADER */
+header {
+  height: 60vh;
+  width: 100vw;
+  background-image: url(https://cdn.shopify.com/s/files/1/0020/4547/6915/files/vapium-lite-landing-page-1427x803_2048x.jpg?v=1538762971);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* NAV */
+.navigation {
+  color: #fafafa;
+  font-size: 12px;
+}
+
+.navigation .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.navigation .nav-wrapper .nav-left {
+  padding: 30px 0 20px 200px;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  color: #ffce30;
+}
+
+.navigation .nav-wrapper .nav-right {
+  padding: 30px 140px 20px 0;
+}
+
+.navigation .nav-wrapper .nav-right .nav-list {
+  display: flex;
+}
+
+.navigation .nav-wrapper .nav-right .nav-list .nav-list__link {
+  margin-right: 20px;
+  list-style: none;
+}
+
+.navigation .nav-wrapper .nav-right .nav-list .nav-list__link a {
+  text-decoration: none;
+  color: #fafafa;
+  transition: 0.3s all;
+}
+
+.navigation .nav-wrapper .nav-right .nav-list .nav-list__link a:hover {
+  color: #ffce30;
+}
+
+/* HERO */
+.hero {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -10vh;
+  color: #fafafa;
+  padding-top: 60px;
+}
+
+.hero .hero-subtitle {
+  font-weight: 300;
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.hero .hero-title {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero .hero-btn {
+  display: inline-block;
+  padding: 7px 24px;
+  background: #ffce30;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero .hero-btn:hover {
+  transform: scale(1.1);
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBY0EsV0FBQTtBQUNBOzs7RUFJQyxzQkFBc0I7RUFDdEIsU0FBUztFQUNULFVBQVU7RUFDVixpQkFBaUI7QUNabEI7O0FEZUE7RUFDQyx1QkFBdUI7QUNaeEI7O0FEZUE7RUFDQyxTQUFTO0VBQ1Qsa0NBQWtDO0VBQ2xDLGVBQWU7QUNaaEI7O0FEZUE7RUFDQyxjQUFjO0VBQ2QsZUFBZTtFQUNmLFVBQVU7QUNaWDs7QURlQSxXQUFBO0FBQ0E7RUFDQyxZQUFZO0VBQ1osWUFBWTtFQUNaLHNJQUFzSTtFQUN0SSxzQkFBc0I7RUFDdEIsa0NBQWtDO0VBQ2xDLDRCQUE0QjtFQUM1QixrQkFBa0I7QUNabkI7O0FEZUEsUUFBQTtBQUVBO0VBQ0MsY0EvQ29CO0VBZ0RwQixlQTVDNEI7QUMrQjdCOztBRFdBO0VBT0UsYUFBYTtFQUdiLDhCQUE4QjtFQUM5QixZQUFZO0FDWmQ7O0FEQ0E7RUFjRywwQkFBMEI7RUFDMUIsc0NBbkVrQztFQW9FbEMsZUFBZTtFQUNmLGNBaEVnQjtBQ3FEbkI7O0FETkE7RUFxQkcsMEJBQTBCO0FDWDdCOztBRFZBO0VBMEJJLGFBQWE7QUNWakI7O0FEaEJBO0VBNkJLLGtCQUFrQjtFQUNsQixnQkFBZ0I7QUNUckI7O0FEckJBO0VBaUNNLHFCQUFxQjtFQUNyQixjQWhGZTtFQWtGZixvQkFBb0I7QUNSMUI7O0FENUJBO0VBdUNPLGNBdEZZO0FDK0VuQjs7QURnQkEsU0FBQTtBQUNBO0VBQ0MsWUFBWTtFQUNaLFlBQVk7RUFHWixhQUFhO0VBR2IsdUJBQXVCO0VBR3ZCLG1CQUFtQjtFQUNuQixrQkFBa0I7RUFDbEIsaUJBQWlCO0VBQ2pCLGNBN0dvQjtFQThHcEIsaUJBQWlCO0FDYmxCOztBREZBO0VBa0JFLGdCQUFnQjtFQUNoQixlQS9Hd0I7RUFnSHhCLHNDQXhIdUM7RUF5SHZDLGtCQUFrQjtFQUNsQixtQkFBbUI7QUNackI7O0FEVkE7RUEwQkUsZUF2SHFCO0VBd0hyQixnQkFBZ0I7RUFDaEIsbUJBQW1CO0FDWnJCOztBRGhCQTtFQWdDRSxxQkFBcUI7RUFDckIsaUJBQWlCO0VBQ2pCLG1CQWxJaUI7RUFtSWpCLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLGdCQUFnQjtFQUNoQixZQUFZO0VBRVosZ0NBQWdDO0FDWmxDOztBRDdCQTtFQTRDRyxxQkFBcUI7QUNYeEIiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
